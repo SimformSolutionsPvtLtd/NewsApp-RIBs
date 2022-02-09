@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "black-text-page-to-swipe-horizontally.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

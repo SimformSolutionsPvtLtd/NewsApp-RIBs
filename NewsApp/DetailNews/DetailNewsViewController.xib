@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailNewsViewController">
+            <connections>
+                <outlet property="imgNews" destination="5Ki-fK-Tvg" id="vZ2-HS-piG"/>
+                <outlet property="lblDescription" destination="PP5-bB-Aq5" id="2Y1-J8-oiD"/>
+                <outlet property="lblTitle" destination="0xU-bm-H0o" id="nqv-IL-gEz"/>
+                <outlet property="view" destination="iN0-l3-epB" id="jYO-eb-xeE"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZXc-Fa-GPS">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lcn-k9-1DD" userLabel="contentView">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="452"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5Ki-fK-Tvg">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="231"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0xU-bm-H0o">
+                                    <rect key="frame" x="15" y="246" width="345" height="95.5"/>
+                                    <string key="text">Dan Ives, a tech analyst with Wedbush, writes he'd be 'shocked if Apple is not aggressively involved' in a potential bid for Peloton.</string>
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PP5-bB-Aq5">
+                                    <rect key="frame" x="15" y="356.5" width="345" height="21.5"/>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                    <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z6P-An-aeU">
+                                    <rect key="frame" x="144" y="398" width="87" height="34"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="Read More"/>
+                                    <connections>
+                                        <action selector="btnWebTapped:" destination="-1" eventType="touchUpInside" id="jlm-1x-FMn"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="5Ki-fK-Tvg" secondAttribute="trailing" id="1PJ-oi-6Ym"/>
+                                <constraint firstItem="z6P-An-aeU" firstAttribute="centerX" secondItem="Lcn-k9-1DD" secondAttribute="centerX" id="1dv-NJ-Zvj"/>
+                                <constraint firstAttribute="bottom" secondItem="z6P-An-aeU" secondAttribute="bottom" constant="20" id="9gM-xc-adF"/>
+                                <constraint firstItem="PP5-bB-Aq5" firstAttribute="leading" secondItem="0xU-bm-H0o" secondAttribute="leading" id="HKF-hj-erl"/>
+                                <constraint firstItem="PP5-bB-Aq5" firstAttribute="top" secondItem="0xU-bm-H0o" secondAttribute="bottom" constant="15" id="Lqi-JK-Wp2"/>
+                                <constraint firstItem="z6P-An-aeU" firstAttribute="top" secondItem="PP5-bB-Aq5" secondAttribute="bottom" constant="20" id="RU2-qq-VIr"/>
+                                <constraint firstItem="5Ki-fK-Tvg" firstAttribute="leading" secondItem="Lcn-k9-1DD" secondAttribute="leading" id="hqh-9r-4dR"/>
+                                <constraint firstAttribute="trailing" secondItem="0xU-bm-H0o" secondAttribute="trailing" constant="15" id="oH2-gs-vCM"/>
+                                <constraint firstItem="0xU-bm-H0o" firstAttribute="leading" secondItem="Lcn-k9-1DD" secondAttribute="leading" constant="15" id="opm-b5-DOd"/>
+                                <constraint firstItem="PP5-bB-Aq5" firstAttribute="trailing" secondItem="0xU-bm-H0o" secondAttribute="trailing" id="vO3-Ai-gZl"/>
+                                <constraint firstItem="5Ki-fK-Tvg" firstAttribute="top" secondItem="Lcn-k9-1DD" secondAttribute="top" id="vPi-gP-b5U"/>
+                                <constraint firstItem="0xU-bm-H0o" firstAttribute="top" secondItem="5Ki-fK-Tvg" secondAttribute="bottom" constant="15" id="yyW-dU-PVo"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="Lcn-k9-1DD" firstAttribute="width" secondItem="ZXc-Fa-GPS" secondAttribute="width" id="6SW-CE-5Iw"/>
+                        <constraint firstAttribute="top" secondItem="Lcn-k9-1DD" secondAttribute="top" id="MHs-KU-Msx"/>
+                        <constraint firstAttribute="leading" secondItem="Lcn-k9-1DD" secondAttribute="leading" id="TdW-rc-ng8"/>
+                        <constraint firstItem="Lcn-k9-1DD" firstAttribute="bottom" secondItem="ZXc-Fa-GPS" secondAttribute="bottom" id="lEm-iD-GsA"/>
+                        <constraint firstItem="Lcn-k9-1DD" firstAttribute="trailing" secondItem="ZXc-Fa-GPS" secondAttribute="trailing" id="wuv-hB-qxI"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ZXc-Fa-GPS" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="7rM-K9-hNO"/>
+                <constraint firstItem="ZXc-Fa-GPS" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="VwC-Hh-BAz"/>
+                <constraint firstAttribute="trailing" secondItem="ZXc-Fa-GPS" secondAttribute="trailing" id="Wxe-xC-RI8"/>
+                <constraint firstAttribute="bottom" secondItem="ZXc-Fa-GPS" secondAttribute="bottom" id="Zn5-rd-VJS"/>
+                <constraint firstItem="5Ki-fK-Tvg" firstAttribute="height" secondItem="vUN-kp-3ea" secondAttribute="height" multiplier="0.346327" id="x2Y-41-Lf0"/>
+            </constraints>
+            <point key="canvasLocation" x="135" y="70"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
