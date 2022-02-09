@@ -12,18 +12,18 @@ PODS:
   - R.swift (6.1.0):
     - R.swift.Library (~> 5.3.0)
   - R.swift.Library (5.3.0)
-  - RIBs (0.9.1):
-    - RxSwift (~> 4.0)
-  - RxCocoa (4.5.0):
-    - RxSwift (>= 4.4.2, ~> 4.4)
-  - RxSwift (4.5.0)
+  - RIBs (0.9.3):
+    - RxRelay (~> 6.0.0)
+    - RxSwift (~> 6.0.0)
+  - RxRelay (6.0.0):
+    - RxSwift (= 6.0.0)
+  - RxSwift (6.0.0)
 
 DEPENDENCIES:
   - Kingfisher (~> 7.0)
   - PromiseKit (~> 6.8)
-  - R.swift
-  - RIBs (~> 0.9)
-  - RxCocoa (~> 4.5.0)
+  - R.swift (= 6.1.0)
+  - RIBs (from `https://github.com/mobile-simformsolutions/RIBs`)
 
 SPEC REPOS:
   trunk:
@@ -31,19 +31,27 @@ SPEC REPOS:
     - PromiseKit
     - R.swift
     - R.swift.Library
-    - RIBs
-    - RxCocoa
+    - RxRelay
     - RxSwift
+
+EXTERNAL SOURCES:
+  RIBs:
+    :git: https://github.com/mobile-simformsolutions/RIBs
+
+CHECKOUT OPTIONS:
+  RIBs:
+    :commit: 9571f986b8393eed5dbc56a7dcb876a62ffbe2ca
+    :git: https://github.com/mobile-simformsolutions/RIBs
 
 SPEC CHECKSUMS:
   Kingfisher: 44ed6a8504763f27bab46163adfac83f5deb240c
   PromiseKit: ed0e2a8e3f3cd59d5d98ca0a6de481a2c5c59c0b
   R.swift: ec98ff71c4ab2f6fd01dd077e5afd15e63a4834c
   R.swift.Library: 0fc583cb55a99e28901299cc451614cad1161962
-  RIBs: 879184fbca567425c488d6b3d14a9c5abfbf9d47
-  RxCocoa: cbf70265dc65a981d4ac982e513c10cf23df24a0
-  RxSwift: f172070dfd1a93d70a9ab97a5a01166206e1c575
+  RIBs: dd8df1129289d51ed4fec6e2127613d9eaba204e
+  RxRelay: 8d593be109c06ea850df027351beba614b012ffb
+  RxSwift: c14e798c59b9f6e9a2df8fd235602e85cc044295
 
-PODFILE CHECKSUM: fad7951d3d358355eca04df81d2723aa5261721d
+PODFILE CHECKSUM: 50010deb28d734c43d68fd944327fcf1e95f0654
 
 COCOAPODS: 1.11.2

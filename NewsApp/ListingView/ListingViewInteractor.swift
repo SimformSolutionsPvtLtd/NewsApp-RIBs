@@ -7,7 +7,8 @@
 
 import RIBs
 import RxSwift
-import RxCocoa
+import RxRelay
+
 protocol ListingViewRouting: ViewableRouting {
     func routeToDetail(for image: Article)
 }

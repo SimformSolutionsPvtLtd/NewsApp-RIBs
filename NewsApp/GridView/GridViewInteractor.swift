@@ -7,7 +7,8 @@
 
 import RIBs
 import RxSwift
-import RxCocoa
+import RxRelay
+
 protocol GridViewRouting: ViewableRouting {
     func redirectToNewsInWeb(url: String)
 }

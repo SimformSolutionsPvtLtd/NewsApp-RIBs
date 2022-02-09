@@ -8,7 +8,8 @@
 import RIBs
 import RxSwift
 import UIKit
-import RxCocoa
+import RxRelay
+
 protocol ListingViewPresentableListener: AnyObject {
     var newsList: BehaviorRelay<News> { get}
     func setNewsData()
