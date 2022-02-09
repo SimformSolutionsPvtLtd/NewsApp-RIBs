@@ -1,0 +1,13 @@
+/* 
+  Localization.strings
+  NewsApp
+
+  Created by Shilpesh Shah on 09/02/22.
+  
+*/
+"newsTitle" = "News";
+"list" = "List View";
+"grid" = "Grid View";
+"err" = "Error";
+"ok" = "Ok";
+"refresh" = "refreshData";
