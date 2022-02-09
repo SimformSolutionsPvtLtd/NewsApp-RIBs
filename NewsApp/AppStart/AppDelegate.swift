@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = window
 
         launchRouter = RootBuilder(dependency: AppComponent()).build()
-        launchRouter?.launchFromWindow(window)
+        launchRouter?.launch(from: window)
 
         return true
     }

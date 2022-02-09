@@ -6,7 +6,7 @@
 //
 
 import RIBs
-import RxCocoa
+import RxRelay
 
 protocol TabbarRouting: ViewableRouting {}
 
